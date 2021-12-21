@@ -6,7 +6,7 @@ The validation report of material parameters can check [Validation](validation/D
 
 
 <div style="width:100%; text-align:center;">
-    <img src="_images\intro\compare1.JPG" style="max-width:1200px;" width="100%">
+    <img src="_images\Intro\compare1.JPG" style="max-width:1200px;" width="100%">
 </div>
 
 ## Constructor
