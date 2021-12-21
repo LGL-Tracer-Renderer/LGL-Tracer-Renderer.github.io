@@ -29,7 +29,7 @@ A simple example, if we just want to render a ball
 
 ```javascript
 import * as THREE from 'three';
-import { LGLTracerRenderer, DisneyMaterial, DirectionalLight } from './lglTracer.es';
+import { LGLTracerRenderer, DisneyMaterial, DirectionalLight } from 'lgl-tracer';
 // const { LGLTracerRenderer, DisneyMaterial, DirectionalLight } = LGLTracer; // if use UMD
 
 const renderer = new LGLTracerRenderer();
@@ -72,7 +72,7 @@ A more complicated example, if we want to render a gltf model(other format's mod
 
 ```javascript
 import * as THREE from 'three';
-import { LGLTracerRenderer } from './lglTracer.es';
+import { LGLTracerRenderer } from 'lgl-tracer';
 // https://github.com/mrdoob/three.js/tree/dev/examples/jsm/loaders
 import { RGBELoader } from './RGBELoader';
 import { GLTFLoader } from './GLTFLoader';
