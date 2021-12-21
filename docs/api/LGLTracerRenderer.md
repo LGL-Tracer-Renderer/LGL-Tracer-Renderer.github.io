@@ -12,7 +12,7 @@ Similar to Threejs's original [WebGLRenderer](https://threejs.org/docs/index.htm
 
 The canvas element used by the renderer, will be created by default if it is not passed.
 
-### useWorker
+#### useWorker
 
 * Type: `Bool`
 * Default: `true`
