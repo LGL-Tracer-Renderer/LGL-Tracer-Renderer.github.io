@@ -4,7 +4,7 @@
 
 To know more or view online examples you can check [Homepage](http://lgltracer.com/).
 
-Or you can try it yourself by following the [Quick Start](guide/quickstart.md) guide.
+Or you can try it yourself by following the [Quick Start](guide/QuickStart.md) guide.
 
 Lets go ~
 
