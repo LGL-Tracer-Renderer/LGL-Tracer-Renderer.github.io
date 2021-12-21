@@ -1,0 +1,83 @@
+body {
+    font-size: 16px;
+}
+
+.cover {
+    background-image: url(./_images/intro/intro.JPG);
+}
+
+.cover-main .anchor span {
+    color: #2d3e50;
+    font-size: 4rem;
+}
+
+.markdown-section a {
+    text-decoration: none;
+}
+
+.markdown-section code {
+    color: #d7d7d7;
+}
+
+.markdown-section h2 {
+    margin: 0.8rem auto 0.8rem auto;
+}
+
+.markdown-section h3 {
+    margin: 0.6rem auto 0.6rem auto;
+}
+
+section.cover .cover-main>p:last-child a,
+section.cover .cover-main > p:last-child a:last-child {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #2d3e50;
+    border: none;
+    opacity: 0.85;
+}
+
+section.cover .cover-main>p:last-child a:hover,
+section.cover .cover-main>p:last-child a:last-child:hover {
+    opacity: 1.0;
+    color: rgba(255, 255, 255, 1.0);
+}
+
+.sidebar {
+    padding: 0 0;
+    width: 250px;
+}
+
+.sidebar>h1 {
+    margin: 1.5rem auto;
+    font-weight: 500;
+}
+.sidebar > h1 a:hover {
+    color: #e2e2e2;
+}
+.sidebar ul li a:hover {
+    color: #e2e2e2;
+    text-decoration: none;
+}
+.content {
+    padding-top: 0;
+}
+
+.markdown-section {
+    max-width: 90%;
+}
+
+.markdown-section th:first-child {
+    min-width: 120px;
+    max-width: 120px;
+    word-break: break-word;
+    /* overflow: hidden; */
+    /* white-space:normal; */
+    /* text-overflow: ellipsis; */
+}
+
+.markdown-section td img {
+    max-width: none;
+}
+
+.markdown-section td {
+    padding: 6px 8px;
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>LGL Tracer Renderer</title>
+		
+	  <script type="module" crossorigin src="/hchunks/index.19c644a5.js"></script>
+    <link rel="modulepreload" href="/hchunks/vendor.6bb59285.js">
+    <link rel="stylesheet" href="/hchunks/index.6909b00d.css">
+  </head>
+	<body>
+		<div class="loadingDoor">
+			<div class="top"></div>
+			<div class="bottom"></div>
+			<div class="progressArea">
+				<div class="LoadingLine">
+					<div class="progress"></div>
+				</div>
+			</div>
+		</div>
+		<main id="wrapper">
+			<div class="scrollContainer">
+				<section id="introSection">
+					<div id="slider"></div>
+					<!--Waves: https://codepen.io/goodkatz/pen/LYPGxQz-->
+					<div class="waveWrapper">
+						<svg
+							class="waves"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							viewBox="0 24 150 28"
+							preserveAspectRatio="none"
+							shape-rendering="auto"
+						>
+							<defs>
+								<path
+									id="gentle-wave"
+									d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+								/>
+							</defs>
+							<g class="parallax">
+								<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.1)" />
+								<use xlink:href="#gentle-wave" x="48" y="1" fill="rgba(255,255,255,0.2)" />
+								<use xlink:href="#gentle-wave" x="48" y="5" fill="#fff" />
+							</g>
+						</svg>
+					</div>
+					<div class="arrowContainer"><div class="arrow bounce"></div></div>
+					<!--Waves end-->
+				</section>
+				<section id="viewerSection">
+					<div class="titleArea">
+						<p class="sub">What is</p>
+						<p class="main">LGL Tracer Renderer</p>
+					</div>
+					<div class="divideLine"></div>
+					<div class="viewerContainer">
+						<div class="textArea">
+							<p class="mainText">LGL Tracer Renderer is a completely web-based path tracing renderer</p>
+							<p class="subText">
+								Suitable for scenes that require realistic rendering on the web during the design
+								process. Whether the cars, shoes, jewelry, buildings, etc.
+							</p>
+							<p class="subText">
+								Here is an example of gltf viewer based on lgl tracer renderer, Let's try it~
+							</p>
+						</div>
+						<div class="viewerPreview">
+							<div class="slider">
+								<div class="slide">
+									<img src="/images/gltf1.jpg" alt="" />
+								</div>
+								<div class="slide">
+									<img src="/images/gltf2.jpg" alt="" />
+								</div>
+								<div class="slide">
+									<img src="/images/gltf3.jpg" alt="" />
+								</div>
+								<div class="slide">
+									<img src="/images/gltf4.jpg" alt="" />
+								</div>
+							</div>
+							<a target="_blank" href="/viewer/index.html"
+								><button class="launchBtn"><span>Launch Viewer</span></button></a
+							>
+						</div>
+					</div>
+				</section>
+				<section id="demoSection">
+					<div class="titleArea">
+						<p class="main">Classic Demo</p>
+					</div>
+					<div class="divideLine"></div>
+					<main class="cardArea">
+						<div class="card">
+							<div class="content">
+								<h2 class="title">CornellBox</h2>
+								<a target="_blank" href="/cornellBox/index.html"><button onfocus="this.blur()" class="btn">Launch</button></a>
+							</div>
+						</div>
+						<div class="card">
+							<div class="content">
+								<h2 class="title">DiningRoom</h2>
+								<p>origin scene</p>
+								<p>(about 22Mb)</p>
+								<a target="_blank" href="/diningRoom/index.html"><button onfocus="this.blur()" class="btn">Launch</button></a>
+								<p>compress scene</p>
+								<p>(about 2Mb, ignore texture)</p>
+								<a target="_blank" href="/diningRoom/index.html?compress=true"><button onfocus="this.blur()" class="btn">Launch</button></a>
+								<a target="_blank" onfocus="this.blur()" href="https://www.blendswap.com/blend/18762"
+									><p class="source">Model Sourse Link</p></a
+								>
+							</div>
+						</div>
+						<div class="card">
+							<div class="content">
+								<h2 class="title">Dragon</h2>
+								<a target="_blank" href="/dragon/index.html"><button onfocus="this.blur()" class="btn">Launch</button></a>
+								<a target="_blank" onfocus="this.blur()" href="https://benedikt-bitterli.me/resources/"
+									><p class="source">Model Sourse Link</p></a
+								>
+							</div>
+						</div>
+						<div class="card">
+							<div class="content">
+								<h2 class="title">Stormtrooper</h2>
+								<a target="_blank" href="/stormtrooper/index.html"><button onfocus="this.blur()" class="btn">Launch</button></a>
+								<a target="_blank" onfocus="this.blur()" href="https://www.blendswap.com/blend/13953"
+									><p class="source">Model Sourse Link</p></a
+								>
+							</div>
+						</div>
+						<div class="card">
+							<div class="content">
+								<h2 class="title">Teapot</h2>
+								<p>RenderMan Teapot</p>
+								<a target="_blank" href="/teapot/index.html"><button onfocus="this.blur()" class="btn">Launch</button></a>
+								<a
+									target="_blank"
+									onfocus="this.blur()"
+									href="https://renderman.pixar.com/official-swatch"
+									><p class="source">Model Sourse Link</p></a
+								>
+							</div>
+						</div>
+					</main>
+				</section>
+				<section id="aboutSection">
+					<div class="contentContainer">
+						<div class="featureArea">
+							<div class="featureBox">
+								<p class="title">Path Tracer</p>
+								<p class="detial">BVH(SAH) Acceleration, Progressive Rendering, Tile Rendering, NEE, MIS </p>
+							</div>
+							<div class="featureBox">
+								<p class="title">Disney BSDF</p>
+								<p class="detial">Material part implement Disney BSDF(BRDF+BTDF)</p>
+							</div>
+							<div class="featureBox">
+								<p class="title">Threejs</p>
+								<p class="detial">
+									Tracer is a plug-in on top of threejs, many supported modules can be used directly (such as model/texture import)
+								</p>
+							</div>
+							<div class="featureBox">
+								<p class="title">WebGL 2.0</p>
+								<p class="detial">
+									The core part base on native WebGL 2.0, optimized based on many features(UBO, Texture2DArray, MRT, etc.)
+								</p>
+							</div>
+							<div class="featureBox">
+								<p class="title">Denoise</p>
+								<p class="detial">
+									SVGF(Spatiotemporal Variance-Guided Filter)
+								</p>
+							</div>
+							<div class="featureBox">
+								<p class="title">Light</p>
+								<p class="detial">
+									Environment lighting(Importance sampling), Analytic
+									Lights(Point,Direction,Rect,Sphere)
+								</p>
+							</div>
+						</div>
+						<div class="introArea">
+							<div class="imageArea">
+								<div class="bigImage">
+									<div class="imgMask"></div>
+									<img src="/images/bedRoom.jpg" alt="" />
+								</div>
+								<div class="smallImage">
+									<div class="imgMask"></div>
+									<img src="/images/shoe.jpg" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Waves: https://codepen.io/goodkatz/pen/LYPGxQz-->
+					<div class="waveWrapper">
+						<svg
+							class="waves"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							viewBox="0 24 150 28"
+							preserveAspectRatio="none"
+							shape-rendering="auto"
+						>
+							<defs>
+								<path
+									id="gentle-wave"
+									d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+								/>
+							</defs>
+							<g class="parallax">
+								<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(246,246,246,0.5)" />
+								<use xlink:href="#gentle-wave" x="48" y="1" fill="rgba(246,246,246,0.8)" />
+								<use xlink:href="#gentle-wave" x="48" y="5" fill="#f6f6f6" />
+							</g>
+						</svg>
+					</div>
+					<!--Waves end-->
+				</section>
+				<footer class="footer">
+					<div class="bottomArea">
+						<div class='btnLeftArea'>
+							<p>lglTacer is currently provided as a library, if you are interested, just try it~</p> 
+							<a href="/docs/index.html" target="_blank">Docs</a>
+							<a href="/docs/index.html#/validation/Disney" target="_blank">Validation</a>
+							<a href="/docs/index.html#/guide/QuickStart?id=license" target="_blank">License</a>
+						</div>
+						<div class='midLine'></div>
+						<div class='contactArea'>
+							<div class="tipText">CONTACT ME</div>
+							<div class="connectArea">
+								<a href="https://twitter.com/WebAMV" target="_blank"><i class="twitterIcon"></i></a>
+								<!-- <a href="https://github.com/todaylg" target="_blank"><i class="githubIcon"></i></a> -->
+								<a href="mailto:lg2lugang@gmail.com" target="_blank"
+									><i class="fa fa-envelope fa-2x mailIcon"></i
+								></a>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</main>
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-X5MNT20R16"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'G-X5MNT20R16');
+		</script>
+	</body>
+</html>
