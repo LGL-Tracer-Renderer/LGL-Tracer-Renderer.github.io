@@ -48,7 +48,7 @@ Declare current material uses Metalness Workflow or Specular Workflow.
 
 * Type: `Number`
 * Default: `0.0`
-  
+
 ### .transmission
 
 * Type: `Number`

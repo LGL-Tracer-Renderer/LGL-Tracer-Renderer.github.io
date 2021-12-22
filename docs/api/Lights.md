@@ -78,6 +78,13 @@ scene.add( rectAreaLight )
 * Type: `Vector3`
 * Default: `[0,0,0]`
 
+#### .visible
+
+* Type: `Bool`
+* Default: `true`
+
+Whether to display the entity of the light in the camera (this property will not affect the original lighting in the scene).
+
 ## SphereAreaLight
 
 SphereAreaLight(color: Integer, intensity: Float, radius: Float)
@@ -93,3 +100,10 @@ scene.add( sphereAreaLight )
 
 * Type: `Number`
 * Default: `1`
+
+#### .visible
+
+* Type: `Bool`
+* Default: `true`
+
+Whether to display the entity of the light in the camera (this property will not affect the original lighting in the scene).
