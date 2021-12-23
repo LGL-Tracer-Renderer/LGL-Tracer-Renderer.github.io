@@ -89,6 +89,13 @@ Declare current material uses Metalness Workflow or Specular Workflow.
 * Type: `Number`
 * Default: `0.0`
 
+### .alpha
+
+* Type: `Number`
+* Default: `1.0`
+
+Will be multiplied by the alpha channel value of diffuseMap.
+
 ### .map
 
 * Type: `Texture`
