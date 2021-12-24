@@ -63,6 +63,7 @@ section.cover .cover-main>p:last-child a:last-child:hover {
 
 .markdown-section {
     max-width: 90%;
+    overflow-x: scroll;
 }
 
 .markdown-section th:first-child {
