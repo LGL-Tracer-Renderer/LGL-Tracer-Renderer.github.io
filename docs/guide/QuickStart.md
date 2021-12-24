@@ -90,7 +90,8 @@ camera.position.z = 4;
 renderer.setSize(window.innerWidth, window.innerHeight);
 
 async function init() {
-	const rgbeLoader = new RGBELoader();
+	// Note that if it is after R136, it needs to be declared as FloatType
+	const rgbeLoader = new RGBELoader().setDataType(THREE.FloatType);
 	const envMap = await new Promise(resolve => {
 		rgbeLoader.load(envMapPath, resolve);
 	});
