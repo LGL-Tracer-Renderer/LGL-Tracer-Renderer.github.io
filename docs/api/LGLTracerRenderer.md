@@ -12,6 +12,13 @@ Similar to Threejs's original [WebGLRenderer](https://threejs.org/docs/index.htm
 
 The canvas element used by the renderer, will be created by default if it is not passed.
 
+#### canvasAlpha
+
+* Type: `Bool`
+* Default: `true`
+
+whether the canvas contains an alpha channel.
+
 #### useWorker
 
 * Type: `Bool`
@@ -49,13 +56,19 @@ The number of times the light bounces per path, at least 2 times and at most 8 t
 
 Set the intensity of the environment lighting.
 
+### .enviromentVisible
+
+* Type: `Bool`
+* Default: `true`
+
+Whether to display the enviroment background (does not affect the lighting of scene objects)
+
 ### .enableDenoise
 
 * Type: `Bool`
 * Default: `false`
 
 Whether to enable the SVGF(Spatiotemporal Variance-Guided Filter) denoise pass. SVGF pass include temporal and spatial part, controlled by two independent switches.
-
 
 <div style="width:100%; text-align:center;">
     <img src="_images\Intro\denoising.jpg" width="90%">
