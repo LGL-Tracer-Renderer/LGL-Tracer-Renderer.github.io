@@ -15,7 +15,7 @@ The canvas element used by the renderer, will be created by default if it is not
 #### canvasAlpha
 
 * Type: `Bool`
-* Default: `true`
+* Default: `false`
 
 whether the canvas contains an alpha channel.
 
