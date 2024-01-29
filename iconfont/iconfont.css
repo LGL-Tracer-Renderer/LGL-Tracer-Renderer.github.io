@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4230431 */
+  src: url('iconfont.woff2?t=1706085735010') format('woff2'),
+       url('iconfont.woff?t=1706085735010') format('woff'),
+       url('iconfont.ttf?t=1706085735010') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-discord:before {
+  content: "\e66e";
+}
+
+.icon-alipay:before {
+  content: "\e602";
+}
+
+.icon-wechat:before {
+  content: "\e6ca";
+}
+
+.icon-kofi:before {
+  content: "\e979";
+}
+
+.icon-patreon:before {
+  content: "\e63b";
+}
+
+.icon-focus:before {
+  content: "\e725";
+}
+
+.icon-add:before {
+  content: "\e6b9";
+}
+
+.icon-info:before {
+  content: "\e77e";
+}
+
+.icon-translate:before {
+  content: "\e8cc";
+}
+
+.icon-translate1:before {
+  content: "\e902";
+}
+
+.icon-email:before {
+  content: "\e603";
+}
+
+.icon-twiter:before {
+  content: "\e6cf";
+}
+
+.icon-cylinder:before {
+  content: "\e693";
+}
+
+.icon-redo:before {
+  content: "\e95d";
+}
+
+.icon-undo:before {
+  content: "\e962";
+}
+
+.icon-copy:before {
+  content: "\e600";
+}
+
+.icon-library:before {
+  content: "\e792";
+}
+
+.icon-download:before {
+  content: "\e66c";
+}
+
+.icon-render:before {
+  content: "\e664";
+}
+
+.icon-unlock:before {
+  content: "\e7c9";
+}
+
+.icon-lock:before {
+  content: "\e709";
+}
+
+.icon-return:before {
+  content: "\e720";
+}
+
+.icon-light:before {
+  content: "\e6de";
+}
+
+.icon-heartShape:before {
+  content: "\e601";
+}
+
+.icon-invisible:before {
+  content: "\e615";
+}
+
+.icon-visible:before {
+  content: "\e61b";
+}
+
+.icon-delete:before {
+  content: "\e616";
+}
+
+.icon-history:before {
+  content: "\e674";
+}
+
+.icon-outliner:before {
+  content: "\e675";
+}
+
+.icon-fold:before {
+  content: "\e677";
+}
+
+.icon-unfold:before {
+  content: "\e620";
+}
+
+.icon-transform:before {
+  content: "\e741";
+}
+
+.icon-help:before {
+  content: "\e761";
+}
+
+.icon-torus:before {
+  content: "\e6d3";
+}
+
+.icon-sphere:before {
+  content: "\e65e";
+}
+
+.icon-box:before {
+  content: "\e6fc";
+}
+
+.icon-camera:before {
+  content: "\e667";
+}
+
+.icon-cone:before {
+  content: "\e730";
+}
+
+.icon-octahedron:before {
+  content: "\e746";
+}
+
+.icon-plane:before {
+  content: "\e869";
+}
+

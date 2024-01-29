@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>LGLTracer</title>
+	<link rel="icon" href="data:null;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAACPVBMVEUAAAAiODJgi2xgjX1MfGwROSwQOCcyWke/2tIUOStEZ1lGd1gvZE8jXktqlXZSgnMwaFyVsauftK8dQjhjj2pZhGC/4tRHa1oQNyjK5t+nyrfB5tnA3dbL7uUSPi6oybsMNyeRvKmhyrcZQzDN5d9HbFRCZFVgkng8ZksYRTWnyb4XPi5/qJOgzrtmn4isyr8ONSe71M+AuaVPd2bL3+F5n4Y4ZVZHYlaGppiAopR6oI4JMCWuzr8QLSE9eWmzzsqiv7VGXFI3VEiwvL6/386FtI9jk4Rmk4JgkYBsm3hmlG82f2EpaFMoYk7Y8+q11cip18OjyreZwq2Ou6OVwKB1tZ2DspuKuJhwpY1doop8nop6nIdRlX91pn5ci31vlXpNj3pOhnZKi21cjmlCfmlAb10rdFQxaFQjaFAgZ00hWkUjU0EgVD8YRzTD49nF5dO44dCu08Kl0sCt0b+q0biez7iayLWaxbKfxrGUwrGFxKyQvqx7vqiRu6eTtqeBqJiKsJZpq5aFqJV3qZR+r42BoI1qn4hmlYdWnoZ8rIVumIR2qINVm4JQmYFTl4BflYBim35rkX5so31dln1PkX1ikH1yo3tZjntXiHlonXdsmXdunnZkm3ZUk3VQjnVXk21kj21Hf2thkWpFiWVaiGRZgGI4dWFHdGFIhV9QdF9Ugl5Hbl0xfVtUe1s4bFk2elg8aFhQeFYuZlMib1Iia1FHblAia1AgXkYoW0YbWEMwWT8dTjwUTzoTQC4SPSxCiPr+AAAARHRSTlMABFozMwz+uoVwW1tbW1g3LxgMCv7+/Pn48fHt6+LQzcPBtrWysbCvqaifn5OBe3p6d2RkXVtbUlBOTEVEOS8rKCMfHrmFTPEAAAFTSURBVDjLYqAzsOdQ4RDELS1kKOnnl6eFW4G+f3FhQJEiTnlBqcDAsqpQHZwKLEMqyitrIq1wKjANDwqqDu1hxqmAzzW4NrgxBrcCpu6WsLDIGH7cCmZOimjumIJHgeecCRG9CSy43eA5f25bX4IdbhOSFydN7k8UwKmAe4V30jw3fAoAW7/Ge3r7DNxu4ElL83Zzi8OtgHfb5hR3D3dIQNnoGjFiKMjcstDDo94CyHRWCigo1cOwIjMjJc69Tt5ByETGxaUkXB1dgVl6xrKpXU3+0rJiIa6dsV7G6Aq41vn4TIyKanDJd42dNltElRFDQaqPb2prdPwsTy+vRaIawhi+MF+9yXfn8uj4BclLVm1kZ8X0pqN4um/WnuyVS9du3aUpjC0g1DZsz8renbuPTcKAEWtIObHvyMnJ3cumYI0rLFk55ZS1OW1Z8WQtRkYG6gMAFKdZDYovNOMAAAAASUVORK5CYII=" type="image/x-icon" />
+	
+	<link rel="stylesheet" href="/iconfont/iconfont.css" />
+  <script type="module" crossorigin src="/hchunks/index.6491a395.js"></script>
+    <link rel="modulepreload" href="/hchunks/vendor.6bb59285.js">
+    <link rel="stylesheet" href="/hchunks/index.cb9a4f51.css">
+  </head>
+
+<body>
+	<div class="loadingDoor">
+		<div class="top">
+			<div class="topText">LGLTracer<span class="version">V3</span></div>
+		</div>
+		<div class="bottom"></div>
+		<div class="progressArea">
+			<div class="LoadingLine">
+				<div class="progress"></div>
+			</div>
+		</div>
+	</div>
+	<main id="wrapper">
+		<div class="scrollContainer">
+			<section id="introSection">
+				<!--Waves: https://codepen.io/goodkatz/pen/LYPGxQz-->
+				<div class="waveWrapper">
+					<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+						viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+						<defs>
+							<path id="gentle-wave"
+								d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+						</defs>
+						<g class="parallax">
+							<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.1)" />
+							<use xlink:href="#gentle-wave" x="48" y="1" fill="rgba(255,255,255,0.2)" />
+							<use xlink:href="#gentle-wave" x="48" y="5" fill="#fff" />
+						</g>
+					</svg>
+				</div>
+				<div class="arrowContainer">
+					<div class="arrow bounce"></div>
+				</div>
+				<!--Waves end-->
+			</section>
+			<section id="preTextSection">
+				<div class="titleArea">
+					<p class="main">LGLTracer! Launch!</p>
+				</div>
+				<div class="divideLine"></div>
+				<div class="preTextArea">
+					<p class="preText">
+						LGLTracer is a ray tracing rendering engine for the Web.
+					</p>
+					<p class="preText">
+						It provides <b>Editor</b> and <b>Viewer</b> solutions for high-quality rendering on the Web, and supports both
+						WebGPU and WebGL.
+					</p>
+					<p class="preText">
+						Just try the Editor and Viewer below, I believe you will be shocked by the potential of the Web :D
+					</p>
+				</div>
+			</section>
+			<div class="splitTitle">
+				<p class="main">LGL Editor</p>
+			</div>
+			<section id="editorSection">
+				<div class="editorContainer">
+					<div class="editorPreview">
+						<div class="videoPreviewer">
+							<div class="imgMask"></div>
+							<video src="/videos/editor.mp4" autoplay="autoplay" loop="loop" muted='muted'> </video>
+						</div>
+						<div class="bottonArea">
+							<a target="_blank" href="/editor/index.html"><button class="launchBtn"><span>Launch
+										Editor</span></button></a>
+						</div>
+					</div>
+					<div class="textArea">
+						<p class="subText">
+							LGL Editor provides many functions to support dynamic editing, so you can easily create and save your stunning scenes.
+						</p>
+						<div class="featureArea">
+							<div class="featureBox">
+								<p class="title">WebGPU/WebGL</p>
+								<p class="detial">automatically switch based on hardware support</p>
+							</div>
+							<div class="featureBox">
+								<p class="title">Import/Export</p>
+								<p class="detial">dynamically import models into the scene, and export to save your scene</p>
+							</div>
+							<div class="featureBox">
+								<p class="title">History Record</p>
+								<p class="detial">support undo or redo your editing steps</p>
+							</div>
+							<div class="featureBox">
+								<p class="title">Group Editing</p>
+								<p class="detial">recombine scene node relationships or regroup</p>
+							</div>
+							<div class="featureBox">
+								<p class="title">Text/Primitives/Lights</p>
+								<p class="detial">dynamically add primitives, text, and envMap or analytical lights</p>
+							</div>
+							<div class="featureBox">
+								<p class="title">Material Editing</p>
+								<p class="detial">dynamic material replacement, material parameter modification(BSSRDF)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="splitTitle">
+				<p class="main">LGL Viewer</p>
+			</div>
+			<section id="viewerSection">
+				<div class="viewerContainer">
+					<div class="textArea">
+						<p class="subText">
+							LGL Viewer has been deeply optimized for static scenes to further pursue the best performance.
+						</p>
+						<div class="featureArea">
+							<div class="featureBox">
+								<p class="title">WebGPU/WebGL</p>
+								<p class="detial">automatically switch based on hardware support</p>
+							</div>
+							<div class="featureBox">
+								<p class="title">Mobile</p>
+								<p class="detial">support mobile/pad devices(currently only through webgl)</p>
+							</div>
+							<div class="featureBox">
+								<p class="title">GPU Building</p>
+								<p class="detial">load large models without waiting for build time</p>
+							</div>
+							<div class="featureBox">
+								<p class="title">Performance</p>
+								<p class="detial">deep performance optimization</p>
+							</div>
+						</div>
+					</div>
+					<div class="viewerPreview">
+						<div class="videoPreviewer">
+							<div class="imgMask"></div>
+							<video src="/videos/viewer.mp4" autoplay="autoplay" loop="loop" muted='muted'> </video>
+						</div>
+						<div class="bottonArea">
+							<a target="_blank" href="/viewer/index.html"><button class="launchBtn"><span>Launch
+										Viewer</span></button></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="footer">
+				<div class="bottomArea">
+					<div class='btnLeftArea'>
+						<p>LGLTracer is my personal project.</p>
+						<p>I have always been pursuing better rendering effects on the Web.</p>
+						<p class="sponsor-split"></p>
+						<p>If my project/tool is helpful to you,</p>
+						<p>please sponsor me to encourage me to continue development , thanks!</p>
+					</div>
+					<div class='midLine'></div>
+					<div class="connectArea">
+						<a href="https://www.patreon.com/LGLTracer" target="_blank"><i class="iconfont icon-discord"></i></a>
+						<a href="https://ko-fi.com/lgltracer" target="_blank"><i class="iconfont icon-kofi"></i></a>
+						<a href="https://twitter.com/WebAMV" target="_blank"><i class="iconfont icon-twiter"></i></a>
+						<i class="iconfont icon-wechat">
+							<div class="sponsor-image">
+								<img class='qrcode-image' src="/images/wechatSmall.jpg" alt="" draggable="false">
+							</div>
+						</i>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</main>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-X5MNT20R16"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-X5MNT20R16');
+	</script>
+</body>
+
+</html>
