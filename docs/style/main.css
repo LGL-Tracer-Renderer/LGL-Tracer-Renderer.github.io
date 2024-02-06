@@ -2,8 +2,31 @@ body {
     font-size: 16px;
 }
 
+:root {
+	--theme-color: #bef3ff;
+	--cover-button-primary-background: #51bcd4;
+	--link-color: #69dffa;
+    --cover-max-width: 100em;
+	--cover-heading-font-size-max: 120;
+    --cover-heading-font-size-min: 34;
+	--heading-h1-border-width: 0 0 1px 0;
+    --heading-h1-border-color: var(--mono-tint2);
+	--heading-h2-border-width: 0 0 0 0;
+	--heading-h1-color: #bef3ff;
+	--sidebar-name-color: #bef3ff;
+}
+
 .cover {
-    background-image: url(./_images/Intro/intro.JPG);
+    background-image: url(../_images/Intro/docIntro.jpg);
+    background-size: cover;
+}
+
+.cover h1 .version {
+	margin-left: 20px;
+}
+
+.cover h1 span {
+	text-shadow: 2px 2px 4px #000;
 }
 
 .cover-main .anchor span {
@@ -32,7 +55,7 @@ section.cover .cover-main > p:last-child a:last-child {
     color: rgba(255, 255, 255, 0.8);
     background-color: #2d3e50;
     border: none;
-    opacity: 0.85;
+    opacity: 0.95;
 }
 
 section.cover .cover-main>p:last-child a:hover,
@@ -82,3 +105,4 @@ section.cover .cover-main>p:last-child a:last-child:hover {
 .markdown-section td {
     padding: 6px 8px;
 }
+

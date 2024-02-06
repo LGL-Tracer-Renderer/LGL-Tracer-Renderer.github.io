@@ -1,4 +1,3 @@
-# LGLTracer<small class="version">2.0.0</small>
+# LGLTracer<span class="version">V3.0</span>
 
-[HomePage](http://lgltracer.com/)
 [Getting Started](#LGLTracer)

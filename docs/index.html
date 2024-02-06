@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="./dark.css">
-  <link rel="stylesheet" href="./main.css">
+	<meta charset="UTF-8" />
+	<title>LGLTracer V3 Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="description" content="Description" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<link rel="stylesheet" media="(prefers-color-scheme: dark)" href="./style/dark.css" />
+	<link rel="stylesheet" media="(prefers-color-scheme: light)" href="./style/light.css" />
+	<link rel="stylesheet" href="./style/main.css" />
 </head>
+
 <body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: 'LGLTracer',
-      repo: '',
-      loadSidebar: true,
-      alias: {
-        '/.*/_sidebar.md': '/_sidebar.md'
-      },
-      coverpage: true
-    }
-  </script>
-  <!-- Docsify v4 -->
-  <script src="./docsify.js"></script>
+	<div id="app"></div>
+	<script>
+		window.$docsify = {
+			name: "LGLTracer",
+			repo: "",
+			loadSidebar: true,
+			alias: {
+				"/.*/_sidebar.md": "/_sidebar.md",
+			},
+			coverpage: true,
+		};
+	</script>
+	<script src="./docsify/docsify.js"></script>
+	<script src="./docsify/docsify-themeable.min.js"></script>
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-X5MNT20R16"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-X5MNT20R16');
+	</script>
 </body>
+
 </html>

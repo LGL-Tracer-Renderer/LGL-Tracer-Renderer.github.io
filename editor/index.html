@@ -122,12 +122,12 @@
 		}
 	</style>
 	<link rel="stylesheet" href="/iconfont/iconfont.css" />
-  <script type="module" crossorigin src="/assets/editor-e86ab981.js"></script>
+  <script type="module" crossorigin src="/assets/editor-5eb424fe.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/el-tag-2a796b49.js">
-  <link rel="modulepreload" crossorigin href="/assets/localforage-bf96fc6c.js">
+  <link rel="modulepreload" crossorigin href="/assets/localforage-acab835a.js">
   <link rel="stylesheet" href="/assets/el-tag-3fe254b2.css">
-  <link rel="stylesheet" href="/assets/localforage-ca071cc1.css">
-  <link rel="stylesheet" href="/assets/index-a21c066f.css">
+  <link rel="stylesheet" href="/assets/localforage-1c7a1569.css">
+  <link rel="stylesheet" href="/assets/index-a0ec0dbd.css">
 </head>
 
 <body class="loading">
@@ -146,6 +146,14 @@
 	<div class="building-text-container">
 		<div class="building-text"></div>
 	</div>
+	<script>
+		if (!navigator.gpu || !navigator.gpu.getPreferredCanvasFormat) {
+			window.LGL_BACKEND = 'webgl';
+			document.body.classList.add('webgl');
+			window.GPUBufferUsage = {};
+			window.GPUTextureUsage = {};
+		}
+	</script>
 	
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->

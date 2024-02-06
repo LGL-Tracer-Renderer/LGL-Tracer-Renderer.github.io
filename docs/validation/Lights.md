@@ -26,16 +26,6 @@
 |     2.0      |  <img src="_images\LGL\Light_R2.jpeg" title="" alt="" width="320">  |  <img src="_images\PBRT\Light_R2.JPG" title="" alt="" width="320">  |
 |     3.0      |  <img src="_images\LGL\Light_R3.jpeg" title="" alt="" width="320">  |  <img src="_images\PBRT\Light_R3.JPG" title="" alt="" width="320">  |
 
-
-## SphereArea Light
-
-| radius |                                 LGL                                  |                                 PBRT                                 |
-| :----: | :------------------------------------------------------------------: | :------------------------------------------------------------------: |
-|  0.05  | <img src="_images\LGL\Light_S0.05.jpeg" title="" alt="" width="320"> | <img src="_images\PBRT\Light_S0.05.JPG" title="" alt="" width="320"> |
-|  0.1   | <img src="_images\LGL\Light_S0.1.jpeg" title="" alt="" width="320">  | <img src="_images\PBRT\Light_S0.1.JPG" title="" alt="" width="320">  |
-|  0.2   | <img src="_images\LGL\Light_S0.2.jpeg" title="" alt="" width="320">  | <img src="_images\PBRT\Light_S0.2.JPG" title="" alt="" width="320">  |
-
-
 ## Environment Light
 
 |  EnvMap  |                                 LGL                                 |                                PBRT                                 |
